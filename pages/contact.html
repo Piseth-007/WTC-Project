@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        a {
+            transition: all .3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="h-20 flex items-center justify-between">
+                <h1 class="font-black text-xl tracking-tight">
+                    ARCHITECT
+                </h1>
+                <nav class="hidden md:flex gap-10 text-sm">
+                    <a href="../index.html" class="hover:text-blue-600">
+                        Home
+                    </a>
+                    <a href="./about.html" class="hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="./service.html" class="hover:text-blue-600">
+                        Services
+                    </a>
+                    <a href="./contact.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">
+                        Contact
+                    </a>
+                </nav>
+                <a href="./contact.html"
+                    class="hidden md:inline-flex bg-black text-white px-6 py-3 rounded-xl text-sm hover:opacity-90">
+                    Get Started
+                </a>
+                <details class="relative md:hidden">
+                    <summary
+                        class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-xl border border-gray-200 text-gray-900 hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </summary>
+                    <div
+                        class="absolute right-0 top-14 w-64 rounded-3xl border border-gray-100 bg-white p-4 shadow-xl">
+                        <nav class="grid gap-2 text-sm">
+                            <a href="../index.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
+                                Home
+                            </a>
+                            <a href="./about.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
+                                About
+                            </a>
+                            <a href="./service.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
+                                Services
+                            </a>
+                            <a href="./contact.html" class="rounded-2xl bg-blue-50 px-4 py-3 font-semibold text-blue-600">
+                                Contact
+                            </a>
+                            <a href="./contact.html"
+                                class="mt-2 rounded-2xl bg-black px-4 py-3 text-center font-semibold text-white">
+                                Get Started
+                            </a>
+                        </nav>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        img {
+            transition: all .3s ease;
+        }
+
+        button {
+            transition: all .3s ease;
+        }
+
+        a {
+            transition: all .3s ease;
+        }
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="h-20 flex items-center justify-between">
+                <h1 class="font-black text-xl tracking-tight">
+                    ARCHITECT
+                </h1>
+                <nav class="hidden md:flex gap-10 text-sm">
+                    <a href="index.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">
+                        Home
+                    </a>
+                    <a href="./pages/about.html" class="hover:text-blue-600">
+                        About
+                    </a>
+                    <a href="./pages/service.html" class="hover:text-blue-600">
+                        Services
+                    </a>
+                    <a href="./pages/contact.html" class="hover:text-blue-600">
+                        Contact
+                    </a>
+                </nav>
+                <a href="./pages/contact.html"
+                    class="hidden md:inline-flex bg-black text-white px-6 py-3 rounded-xl text-sm hover:opacity-90">
+                    Get Started
+                </a>
+                <details class="relative md:hidden">
+                    <summary
+                        class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-xl border border-gray-200 text-gray-900 hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </summary>
+                    <div
+                        class="absolute right-0 top-14 w-64 rounded-3xl border border-gray-100 bg-white p-4 shadow-xl">
+                        <nav class="grid gap-2 text-sm">
+                            <a href="index.html" class="rounded-2xl bg-blue-50 px-4 py-3 font-semibold text-blue-600">
+                                Home
+                            </a>
+                            <a href="./pages/about.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
+                                About
+                            </a>
+                            <a href="./pages/service.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
+                                Services
+                            </a>
+                            <a href="./pages/contact.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
+                                Contact
+                            </a>
+                            <a href="./pages/contact.html"
+                                class="mt-2 rounded-2xl bg-black px-4 py-3 text-center font-semibold text-white">
+                                Get Started
+                            </a>
+                        </nav>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+    <!-- HERO -->
+    <section class="relative min-h-[calc(100vh-5rem)] overflow-hidden">
+        <video autoplay muted loop playsinline class="absolute inset-0 h-full w-full object-cover">
+            <source src="./assets/video/19141604-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black/63"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 min-h-[calc(100vh-5rem)] flex items-center">
+
+            <div class="max-w-4xl">
+
+                <!-- LEFT -->
+                <div>
+
+                    <span
+                        class="inline-flex items-center bg-white/10 border border-white/20 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur">
+
+                        INNOVATION IN CODE
+
+                    </span>
+
+                    <h1 class="mt-8 text-5xl sm:text-6xl md:text-8xl font-black leading-none tracking-tight text-white">
+
+                        Engineering
+                        <br>
+                        <span class="text-blue-400">
+                            Digital Excellence.
+                        </span>
+
+                    </h1>
+
+                    <p class="mt-8 text-gray-200 text-lg leading-8 max-w-2xl">
+
+                        We design high-performance web and mobile applications for ambitious brands, blending
+                        architectural precision with cutting-edge digital design.
+
+                    </p>
+
+                    <div class="flex flex-wrap gap-5 mt-12">
+
+                        <a href="./pages/contact.html"
+                            class="bg-blue-600 text-white px-8 py-4 rounded-2xl shadow-lg hover:bg-blue-700 hover:-translate-y-1 duration-300">
+
+                            Start Your Project
+
+                        </a>
+
+                        <a href="#services"
+                            class="border border-white px-8 py-4 rounded-2xl text-white hover:bg-white hover:text-black hover:-translate-y-1 duration-300">
+
+                            View Services
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="hidden">
+
+                    <img src="assets/image/6-best-practices-for-Dashboard-Design-Justinmind-header-768x492.png" alt="Dashboard"
+                        class="rounded-4xl shadow-2xl hover:scale-[1.02]">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SERVICES -->
+    <section id="services" class="bg-gray-50 py-28">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-16">
+
+                <h2 class="text-5xl font-bold">
+                    What We Do
+                </h2>
+
+                <p class="text-gray-500 mt-4">
+                    Strategic execution across the entire digital lifecycle.
+                </p>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- CARD 1 -->
+                <div class="bg-white shadow p-8 rounded-[30px] hover:-translate-y-2 hover:shadow-xl duration-300">
+
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-blue-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Bespoke Web Systems
+                    </h3>
+
+                    <p class="text-gray-500 leading-7">
+                        Scalable, secure and high-performance digital infrastructure
+                        built for growth.
+                    </p>
+
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="bg-white shadow p-8 rounded-[30px] hover:-translate-y-2 hover:shadow-xl duration-300">
+
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-blue-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Mobile First
+                    </h3>
+
+                    <p class="text-gray-500 leading-7">
+                        Native and responsive applications optimized for modern
+                        devices.
+                    </p>
+
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="bg-white shadow  p-8 rounded-[30px] hover:-translate-y-2 hover:shadow-xl duration-300">
+
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-blue-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 19V6M6 19V10M16 19V3M21 19v-8" />
+
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Data & AI
+                    </h3>
+
+                    <p class="text-gray-500 leading-7">
+                        Intelligent solutions powered by analytics and machine
+                        learning.
+                    </p>
+
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="bg-[#08142f] text-white p-8 rounded-[30px] hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+                    <div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center mb-6">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Full-Cycle DevOps
+                    </h3>
+
+                    <p class="text-gray-300 leading-7">
+                        Automated deployment pipelines and cloud-native
+                        infrastructure.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED WORK -->
+    <section class="py-28">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex justify-between items-center mb-14">
+
+                <div>
+
+                    <h2 class="text-5xl font-bold">
+                        Featured Work
+                    </h2>
+
+                    <p class="text-gray-500 mt-3">
+                        Selected projects crafted with precision.
+                    </p>
+
+                </div>
+
+                <a href="#" class="hidden md:block text-blue-600 font-semibold">
+
+                    Explore Full Portfolio →
+
+                </a>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- PROJECT 1 -->
+                <div>
+
+                    <img src="assets/image/premium_photo-.avif"
+                        class="w-full h-80 object-cover rounded-[30px] shadow-lg hover:scale-[1.02]" alt="">
+
+                    <h3 class="text-2xl font-bold mt-6">
+                        Luminal Finance
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        Digital payments infrastructure and financial analytics.
+                    </p>
+
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div>
+
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4kg6Fu8ZzC61llc-lrWUcRaK0nRE-pZeK6gCo7d1e5NCeOC9rq_hAAhA5Eve6cUpvXx3oy2emASabJzrqlg4xfY_MCy7bcf9lzNCb_yUqcBGtdqOqQPSeAtoJc7GVesgqdCPHOl_9Qst0-K23ZEoqede9_Zmz-hpeQn_jTZvx9Ev7cDgBc8g32edTbGYYHj0oRqJbp7nUQ73tWI4ewnhE1Mmp2x9UqSA2HVJrG-w_nb9OV8DtrVU0TGOzyF0XaTlBQing2VfOdCv7"
+                        class="w-full h-80 object-cover rounded-[30px] shadow-lg hover:scale-[1.02]" alt="">
+
+                    <h3 class="text-2xl font-bold mt-6">
+                        Vanguard Retail
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        AI-powered shopping experiences and customer insights.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- TESTIMONIAL -->
+    <section class="bg-gray-50 py-28">
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-600" fill="currentColor"
+                    viewBox="0 0 24 24">
+
+                    <path
+                        d="M7.17 6A5.001 5.001 0 0 0 2 11v7h8v-7H6a3 3 0 0 1 3-3V6H7.17zm10 0A5.001 5.001 0 0 0 12 11v7h8v-7h-4a3 3 0 0 1 3-3V6h-1.83z" />
+
+                </svg>
+
+            </div>
+
+            <h2 class="mt-10 text-3xl md:text-5xl font-bold leading-tight">
+
+                Architect transformed our technical debt into our greatest
+                competitive advantage.
+
+            </h2>
+
+            <p class="text-gray-500 mt-10 text-lg">
+                Marcus Thorne
+            </p>
+
+            <p class="text-gray-400">
+                CTO, NexGen Systems
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="py-28">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="bg-black text-white rounded-[40px] py-24 px-10 text-center shadow-2xl">
+
+                <h2 class="text-4xl md:text-6xl font-black">
+
+                    Ready to build the future?
+
+                </h2>
+
+                <p class="mt-6 text-gray-400 max-w-2xl mx-auto leading-8">
+
+                    Join industry leaders who trust our expertise to design,
+                    develop, and scale world-class digital products.
+
+                </p>
+
+                <button
+                    class="mt-10 bg-blue-600 px-8 py-4 rounded-2xl font-medium hover:bg-blue-700 hover:-translate-y-1 duration-300">
+
+                    Schedule a Consultation
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="border-t bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div>
+                <h3 class="font-black text-2xl">
+                    ARCHITECT
+                </h3>
+                <p class="mt-5 text-gray-500 leading-7">
+                    Precision engineering for the next generation of digital
+                    products and experiences.
+                </p>
+            </div>
+            <!-- Explore -->
+            <div>
+                <h4 class="font-semibold text-lg mb-5">
+                    Explore
+                </h4>
+                <ul class="space-y-4 text-gray-500">
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Careers
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Legal -->
+            <div>
+                <h4 class="font-semibold text-lg mb-5">
+                    Legal
+                </h4>
+                <ul class="space-y-4 text-gray-500">
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Terms of Service
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Social -->
+            <div>
+                <h4 class="font-semibold text-lg mb-5">
+                    Social
+                </h4>
+                <ul class="space-y-4 text-gray-500">
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t text-center text-gray-400">
+            © 2026 Architect Agency. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
