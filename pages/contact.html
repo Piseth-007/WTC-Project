@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +18,17 @@
             font-family: 'Inter', sans-serif;
         }
 
-        a {
+        a,
+        button,
+        input,
+        select,
+        textarea {
             transition: all .3s ease;
         }
     </style>
 </head>
-
 <body class="bg-white text-gray-900">
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow border-gray-100">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow border-gray-100 backdrop:blur-lg">
         <div class="max-w-7xl mx-auto px-6">
             <div class="h-20 flex items-center justify-between">
                 <h1 class="font-black text-xl tracking-tight">
@@ -59,8 +61,7 @@
                                 d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </summary>
-                    <div
-                        class="absolute right-0 top-14 w-64 rounded-3xl border border-gray-100 bg-white p-4 shadow-xl">
+                    <div class="absolute right-0 top-14 w-64 rounded-3xl border border-gray-100 bg-white p-4 shadow-xl">
                         <nav class="grid gap-2 text-sm">
                             <a href="../index.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
                                 Home
@@ -71,7 +72,8 @@
                             <a href="./service.html" class="rounded-2xl px-4 py-3 hover:bg-gray-100">
                                 Services
                             </a>
-                            <a href="./contact.html" class="rounded-2xl bg-blue-50 px-4 py-3 font-semibold text-blue-600">
+                            <a href="./contact.html"
+                                class="rounded-2xl bg-blue-50 px-4 py-3 font-semibold text-blue-600">
                                 Contact
                             </a>
                             <a href="./contact.html"
@@ -84,6 +86,194 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="py-20 md:py-28">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-3xl">
+                    <span class="text-sm font-semibold uppercase tracking-wider text-blue-600">
+                        Contact
+                    </span>
+                    <h1 class="mt-5 text-4xl md:text-6xl font-black leading-tight tracking-tight">
+                        Let's talk about your next <span class="text-blue-600">project.</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-500 leading-8">
+                        Share a few details with us and we will get back to you with a clear next step.
+                    </p>
+                </div>
+
+                <div class="mt-16 grid lg:grid-cols-5 gap-10">
+                    <aside class="lg:col-span-2">
+                        <div class="space-y-8 border-y border-gray-200 py-8">
+                            <div>
+                                <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                                    Email
+                                </h2>
+                                <a href="mailto:hello@architect.dev"
+                                    class="mt-2 inline-block text-xl font-semibold hover:text-blue-600">
+                                    piseth@architect.dev
+                                </a>
+                            </div>
+
+                            <div>
+                                <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                                    Phone
+                                </h2>
+                                <a href="tel:+15552724483"
+                                    class="mt-2 inline-block text-xl font-semibold hover:text-blue-600">
+                                    +(885) 272-4483
+                                </a>
+                            </div>
+
+                            <div>
+                                <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                                    Studio
+                                </h2>
+                                <p class="mt-2 text-gray-600 leading-7">
+                                    STEM Tech Square, Rupp<br>
+                                    Phnom Penh, CA 94105
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2 class="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                                    Hours
+                                </h2>
+                                <p class="mt-2 text-gray-600">
+                                    Monday to Friday, 9:00 AM - 6:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <section class="lg:col-span-3">
+                        <form class="rounded-3xl border border-gray-200 bg-gray-50 p-6 md:p-8">
+                            <div class="grid md:grid-cols-2 gap-5">
+                                <label class="block">
+                                    <span class="text-sm font-medium text-gray-700">Full name</span>
+                                    <input type="text" placeholder="Your name"
+                                        class="mt-2 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none focus:border-blue-600">
+                                </label>
+
+                                <label class="block">
+                                    <span class="text-sm font-medium text-gray-700">Email address</span>
+                                    <input type="email" placeholder="you@example.com"
+                                        class="mt-2 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none focus:border-blue-600">
+                                </label>
+                            </div>
+
+                            <div class="mt-5 grid md:grid-cols-2 gap-5">
+                                <label class="block">
+                                    <span class="text-sm font-medium text-gray-700">Company</span>
+                                    <input type="text" placeholder="Company name"
+                                        class="mt-2 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none focus:border-blue-600">
+                                </label>
+
+                                <label class="block">
+                                    <span class="text-sm font-medium text-gray-700">Project type</span>
+                                    <select
+                                        class="mt-2 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none focus:border-blue-600">
+                                        <option>Website</option>
+                                        <option>Mobile Application</option>
+                                        <option>UI / UX Design</option>
+                                        <option>Strategy</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <label class="mt-5 block">
+                                <span class="text-sm font-medium text-gray-700">Message</span>
+                                <textarea rows="7" placeholder="Tell us what you want to build..."
+                                    class="mt-2 w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 outline-none focus:border-blue-600"></textarea>
+                            </label>
+
+                            <button
+                                class="mt-6 inline-flex rounded-xl bg-blue-600 px-7 py-3 font-semibold text-white hover:bg-blue-700">
+                                Send Message
+                            </button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div>
+                <h3 class="font-black text-2xl">
+                    ARCHITECT
+                </h3>
+                <p class="mt-5 text-gray-500 leading-7">
+                    Precision engineering for the next generation of digital
+                    products and experiences.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-5">
+                    Explore
+                </h4>
+                <ul class="space-y-4 text-gray-500">
+                    <li>
+                        <a href="./service.html" class="hover:text-blue-600">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#services" class="hover:text-blue-600">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="hover:text-blue-600">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-5">
+                    Legal
+                </h4>
+                <ul class="space-y-4 text-gray-500">
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Terms of Service
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-5">
+                    Social
+                </h4>
+                <ul class="space-y-4 text-gray-500">
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t text-center text-gray-400">
+            &copy; 2026 Architect Agency. All rights reserved.
+        </div>
+    </footer>
 </body>
 
 </html>
